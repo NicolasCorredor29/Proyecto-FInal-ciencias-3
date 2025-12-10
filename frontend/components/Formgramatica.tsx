@@ -59,13 +59,16 @@ export default function FormularioGramatica() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/procesar-gramatica", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(json),
-      });
+      const res = await fetch(
+        "https://proyecto-final-ciencias-3.onrender.com/api/procesar-gramatica",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(json),
+        }
+      );
 
       const data = await res.json();
       console.log("Respuesta del backend:", data);
