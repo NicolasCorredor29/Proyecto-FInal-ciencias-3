@@ -5,7 +5,7 @@ from transformations.no_alcanzables import eliminar_no_alcanzables
 from transformations.lambda_ import eliminar_lambda
 from transformations.unitarias import eliminar_unitarias
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": ["https://proyecto-f-inal-ciencias-3.vercel.app"]}})
 
 
 @app.get("/api/saludo")
