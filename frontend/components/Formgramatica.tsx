@@ -161,8 +161,11 @@ export default function FormularioGramatica() {
       </div>
       {resultado && (
         <div className="mt-6 p-4 border rounded bg-gray-100">
-          <h2 className="font-semibold mb-2">Resultado:</h2>
-          <pre className="whitespace-pre-wrap text-sm text-black">
+          Ñ<h2 className="font-semibold mb-2">Resultado:</h2>
+          <pre
+            className="whitespace-pre-wrap text-sm "
+            style={{ color: "#000 !important" }}
+          >
             {formatearProducciones(resultado.producciones)}
           </pre>
         </div>
